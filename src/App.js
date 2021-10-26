@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
 import './assets/App.css';
-import './assets/index.css';
+
+import FormLogin from './components/Login';
 
 class App extends Component {
 
   render(){
     return (
-      <section>
-        <h1>Teste</h1>
+      <section className="pagina-base">
+        <FormLogin/>
       </section>
     );
   }
