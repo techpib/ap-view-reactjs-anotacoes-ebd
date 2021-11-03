@@ -43,7 +43,7 @@ class GoogleLoginComponent extends Component {
 
   render() {
     return (
-      <div className="row mt-5">
+      <div className="row mt-15">
         <div className="col-md-12">
           {this.state.isLoggedIn ? (
             <div>

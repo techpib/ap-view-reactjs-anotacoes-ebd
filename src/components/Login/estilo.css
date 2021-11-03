@@ -1,5 +1,98 @@
 .form-login{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
     margin-left: 3em;
     margin-right: 3em;
+}
+
+.form-login div{
+    margin-top: 0.5em;
+}
+
+.form-login p{
+    margin-top: 1em;
+}
+
+.logo-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+}
+
+.login-google {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.login-google div, button{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.login-google button div{
+    width: 40%;
+    text-align: right;
+}
+
+.login-google button span{
+    width: 60%;
+    text-align: left;
+}
+
+.inputs-login {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.form-login input {
+    width: 100%;
+}
+
+.buttons-login {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.buttons-login div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-login div button {
+    width: 150px;
+}
+
+.buttons-login-criar-conta {
+    color: #1ADB44;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.buttons-login-criar-conta:hover {
+    color: white;
+    background-color: #1ADB44;
+}
+
+.buttons-login-entrar {
+    color: white;
+    background-color: #1ADB44;
+    border: none;
+    font-weight: bold;
+}
+
+.buttons-login-entrar:hover {
+    color: white;
+    background-color: #16bb3a;
 }
