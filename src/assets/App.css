@@ -9,8 +9,12 @@
 
 .card-login {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
   margin: 14em;
+  height: auto;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 0.5em;
@@ -25,4 +29,58 @@ body {
 :root {
   margin: 0px;
   padding: 0px;
+}
+
+@media screen and (max-width: 1000px) {  
+  .card-login {
+    margin: 12em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-login {
+    margin: 11em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-login {
+    margin: 10em;
+  }
+}
+
+@media screen and (max-width: 700px) {  
+  .card-login {
+    margin: 7em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-login {
+    margin: 4em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-login {
+    margin: 3em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-login {
+    margin: 2em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card-login {
+    margin: 1em;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .card-login {
+    margin: 0.5em;
+  }
 }

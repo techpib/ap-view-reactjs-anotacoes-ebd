@@ -96,3 +96,206 @@
     color: white;
     background-color: #16bb3a;
 }
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1000px) {
+    .form-login{
+        margin-left: 2em;
+        margin-right: 2em;
+        max-height: 30em;
+    }
+    
+    .form-login p{
+        margin-top: 1em;
+    }
+
+    .form-login img{
+        width: 300px;
+    }
+    
+}
+  
+@media screen and (max-width: 900px) {
+    .form-login{
+        margin-left: 1.9em;
+        margin-right: 1.9em;
+    }
+    
+    .form-login p{
+        margin-top: 0.95em;
+    }
+
+    .form-login img{
+        width: 290px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .form-login{
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+    }
+    
+    .form-login p{
+        margin-top: 0.90em;
+    }
+
+    .form-login img{
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .form-login{
+        margin-left: 1.7em;
+        margin-right: 1.7em;
+    }
+    
+    .form-login p{
+        margin-top: 0.85em;
+    }
+
+    .form-login img{
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .form-login{
+        margin-left: 1.6em;
+        margin-right: 1.6em;
+    }
+    
+    .form-login p{
+        margin-top: 0.80em;
+    }
+
+    .form-login img{
+        width: 260px;
+    }
+
+    .login-google {
+        width: 100%;
+    }
+
+    .inputs-login {
+        width: 90%;
+    }
+
+    .buttons-login {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-login{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    
+    .form-login p{
+        margin-top: 0.75em;
+    }
+
+    .form-login img{
+        width: 250px;
+    }
+
+    .login-google {
+        width: 90%;
+    }
+
+    .inputs-login {
+        width: 80%;
+    }
+
+    .buttons-login {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-login{
+        margin-left: 1.4em;
+        margin-right: 1.4em;
+    }
+    
+    .form-login p{
+        margin-top: 0.70em;
+    }
+
+    .form-login img{
+        width: 200px;
+    }
+
+    .login-google {
+        width: 80%;
+    }
+
+    .inputs-login {
+        width: 70%;
+    }
+
+    .buttons-login {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .form-login{
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+    }
+    
+    .form-login p{
+        margin-top: 0.65em;
+    }
+
+    .form-login img{
+        width: 170px;
+    }
+
+    .login-google {
+        width: 60%;
+    }
+
+    .inputs-login {
+        width: 60%;
+    }
+
+    .buttons-login {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .form-login{
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    
+    .form-login p{
+        margin-top: 0.60em;
+    }
+
+    .form-login img{
+        width: 140px;
+    }
+
+    .login-google {
+        width: 10%;
+    }
+
+    .inputs-login {
+        width: 10%;
+    }
+
+    .buttons-login {
+        width: 10%;
+    }
+}
