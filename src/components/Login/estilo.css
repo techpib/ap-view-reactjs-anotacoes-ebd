@@ -58,21 +58,6 @@
     width: 100%;
 }
 
-.mostrar-senha {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-}
-
-.mostrar-senha div, p{
-    margin-left: 0.2em;
-    margin-right: 0.2em;
-}
-
-.mostrar-senha div{
-    padding: 0.3em;
-}
-
 .buttons-login {
     width: 100%;
     margin-bottom: 1em;
@@ -162,10 +147,6 @@
         width: 270px;
     }
 
-    .mostrar-senha div{
-        padding: 0.2em;
-    }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -236,10 +217,7 @@
     .buttons-login {
         width: 80%;
     }
-
-    .mostrar-senha div{
-        padding: 0.1em;
-    }
+    
 }
 
 @media screen and (max-width: 400px) {

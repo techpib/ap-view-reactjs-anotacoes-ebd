@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import GoogleLoginComponent from "../GoogleLoginComponent";
 
-import { MdCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
+import MostrarSenha from "../utils/MostrarSenha";
 
 import "./estilo.css";
 import logo from "../../assets/logo.png";
@@ -14,11 +14,6 @@ const FormLogin = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const [mostrar, setMostrar] = useState(false);
-
-    const handleClick = (evento) => {
-        evento.preventDefault();
-        setMostrar(!mostrar);
-    }
 
         return (
             <Form className="form-login">
@@ -37,24 +32,7 @@ const FormLogin = () => {
                     <Form.Group>
                         <Form.Control type={mostrar ? "text" : "password"} placeholder="Digite sua senha..." value={senha} onChange={e => {setSenha(e.target.value)}}/>
                     </Form.Group>
-                    <div className="mostrar-senha">
-                        <div className="check-senha">
-                            {
-                                mostrar ? (
-                                    <MdCheckBox 
-                                        size={20}
-                                        onClick={handleClick}
-                                    />
-                                ) : 
-                                (
-                                    <MdCheckBoxOutlineBlank 
-                                        size={20}
-                                        onClick={handleClick}
-                                    />
-                                )}
-                        </div>
-                        <p>Mostrar Senha</p>
-                    </div>
+                    <MostrarSenha mostrar={mostrar} funcao={setMostrar}></MostrarSenha>
                 </div>
 
                 <div className="buttons-login">
