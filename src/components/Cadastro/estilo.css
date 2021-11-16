@@ -1,0 +1,269 @@
+.form-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.form-cadastro div{
+    margin-top: 0.5em;
+}
+
+.form-cadastro p{
+    margin-top: 1em;
+}
+
+.logo-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+}
+
+.titulo-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titulo-form h1 {
+    font-family: "Roboto";
+    font-size: 150%;
+    color: #494949;
+}
+
+.inputs-cadastro {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.form-cadastro input {
+    width: 100%;
+}
+
+.buttons-cadastro {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.buttons-cadastro div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-cadastro div button {
+    width: 150px;
+}
+
+.buttons-cadastro-cancelar {
+    color: #1ADB44;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.buttons-cadastro-cancelar:hover {
+    color: white;
+    background-color: #1ADB44;
+}
+
+.buttons-cadastro-confirmar {
+    color: white;
+    background-color: #1ADB44;
+    border: none;
+    font-weight: bold;
+}
+
+.buttons-cadastro-confirmar:hover {
+    color: white;
+    background-color: #16bb3a;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1000px) {
+    .form-cadastro{
+        margin-left: 2em;
+        margin-right: 2em;
+        max-height: 30em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 1em;
+    }
+
+    .form-cadastro img{
+        width: 300px;
+    }
+    
+}
+  
+@media screen and (max-width: 900px) {
+    .form-cadastro{
+        margin-left: 1.9em;
+        margin-right: 1.9em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.95em;
+    }
+
+    .form-cadastro img{
+        width: 290px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .form-cadastro{
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.90em;
+    }
+
+    .form-cadastro img{
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .form-cadastro{
+        margin-left: 1.7em;
+        margin-right: 1.7em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.85em;
+    }
+
+    .form-cadastro img{
+        width: 270px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .form-cadastro{
+        margin-left: 1.6em;
+        margin-right: 1.6em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.80em;
+    }
+
+    .form-cadastro img{
+        width: 260px;
+    }
+
+    .inputs-cadastro {
+        width: 90%;
+    }
+
+    .buttons-cadastro {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form-cadastro{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.75em;
+    }
+
+    .form-cadastro img{
+        width: 250px;
+    }
+
+    .inputs-cadastro {
+        width: 80%;
+    }
+
+    .buttons-cadastro {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .form-cadastro{
+        margin-left: 1.4em;
+        margin-right: 1.4em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.70em;
+    }
+
+    .form-cadastro img{
+        width: 200px;
+    }
+
+    .inputs-cadastro {
+        width: 70%;
+    }
+
+    .buttons-cadastro {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .form-cadastro{
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.65em;
+    }
+
+    .form-cadastro img{
+        width: 170px;
+    }
+
+    .inputs-cadastro {
+        width: 60%;
+    }
+
+    .buttons-cadastro {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .form-cadastro{
+        margin-left: 1.2em;
+        margin-right: 1.2em;
+    }
+    
+    .form-cadastro p{
+        margin-top: 0.60em;
+    }
+
+    .form-cadastro img{
+        width: 140px;
+    }
+
+    .inputs-cadastro {
+        width: 10%;
+    }
+
+    .buttons-cadastro {
+        width: 10%;
+    }
+}
