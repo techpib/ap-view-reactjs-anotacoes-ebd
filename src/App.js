@@ -1,7 +1,11 @@
 import React from 'react';
-
-import Card from 'react-bootstrap/Card'
 import './assets/App.css';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 import FormLogin from './components/Login';
 import FormCadastro from './components/Cadastro';
@@ -9,12 +13,15 @@ import FormCadastro from './components/Cadastro';
 const App = () => {
 
   return (
+    <BrowserRouter>
       <section className="pagina-base">
-        <Card className="card-login">
-          <FormCadastro/>
-        </Card>
+        <Routes>
+          <Route path="/login" element={<FormLogin />} />
+          <Route path="/cadastro" element={<FormCadastro />} />
+        </Routes>
       </section>
-    );
+    </BrowserRouter>
+  );
 
 }
 
