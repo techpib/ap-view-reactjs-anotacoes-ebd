@@ -1,17 +1,25 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import GoogleLoginComponent from "../GoogleLoginComponent";
 
-import { HiEye, HiEyeOff } from "react-icons/hi";
+import { MdCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
 
 import "./estilo.css";
 import logo from "../../assets/logo.png";
 
-class FormLogin extends Component {
+const FormLogin = () => {
 
-    render() {
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const [mostrar, setMostrar] = useState(false);
+
+    const handleClick = (evento) => {
+        evento.preventDefault();
+        setMostrar(!mostrar);
+    }
+
         return (
             <Form className="form-login">
                 <div className="logo-login">
@@ -27,8 +35,26 @@ class FormLogin extends Component {
                     </Form.Group>
 
                     <Form.Group>
-                        <Form.Control type="password" placeholder="Digite sua senha..."/>
+                        <Form.Control type={mostrar ? "text" : "password"} placeholder="Digite sua senha..." value={senha} onChange={e => {setSenha(e.target.value)}}/>
                     </Form.Group>
+                    <div className="mostrar-senha">
+                        <div className="check-senha">
+                            {
+                                mostrar ? (
+                                    <MdCheckBox 
+                                        size={20}
+                                        onClick={handleClick}
+                                    />
+                                ) : 
+                                (
+                                    <MdCheckBoxOutlineBlank 
+                                        size={20}
+                                        onClick={handleClick}
+                                    />
+                                )}
+                        </div>
+                        <p>Mostrar Senha</p>
+                    </div>
                 </div>
 
                 <div className="buttons-login">
@@ -43,8 +69,6 @@ class FormLogin extends Component {
                 </div>
             </Form>
         );
-    }
-
 }
 
 export default FormLogin;
