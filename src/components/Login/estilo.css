@@ -1,3 +1,12 @@
+.base {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
 .card-login {
     display: flex;
     flex-direction: column;
@@ -115,6 +124,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+
+    .card-login {
+        margin: 12em;
+    }
+
     .form-login{
         margin-left: 2em;
         margin-right: 2em;
@@ -132,6 +146,11 @@
 }
   
 @media screen and (max-width: 900px) {
+    
+    .card-login {
+        margin: 11em;
+    }
+    
     .form-login{
         margin-left: 1.9em;
         margin-right: 1.9em;
@@ -148,6 +167,11 @@
 }
 
 @media screen and (max-width: 800px) {
+    
+    .card-login {
+        margin: 10em;
+    }
+    
     .form-login{
         margin-left: 1.8em;
         margin-right: 1.8em;
@@ -164,6 +188,11 @@
 }
 
 @media screen and (max-width: 700px) {
+    
+    .card-login {
+        margin: 7em;
+    }
+    
     .form-login{
         margin-left: 1.7em;
         margin-right: 1.7em;
@@ -180,6 +209,11 @@
 }
 
 @media screen and (max-width: 600px) {
+    
+    .card-login {
+        margin: 4em;
+    }
+    
     .form-login{
         margin-left: 1.6em;
         margin-right: 1.6em;
@@ -207,6 +241,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    
+    .card-login {
+        margin: 3em;
+    }
+    
     .form-login{
         margin-left: 1.5em;
         margin-right: 1.5em;
@@ -235,6 +274,11 @@
 }
 
 @media screen and (max-width: 400px) {
+    
+    .card-login {
+        margin: 2em;
+    }
+    
     .form-login{
         margin-left: 1.4em;
         margin-right: 1.4em;
@@ -262,6 +306,11 @@
 }
 
 @media screen and (max-width: 300px) {
+    
+    .card-login {
+        margin: 1em;
+    }
+
     .form-login{
         margin-left: 1.3em;
         margin-right: 1.3em;
@@ -289,6 +338,11 @@
 }
 
 @media screen and (max-width: 200px) {
+    
+    .card-login {
+        margin: 0.5em;
+    }
+
     .form-login{
         margin-left: 1.2em;
         margin-right: 1.2em;

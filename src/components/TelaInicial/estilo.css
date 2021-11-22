@@ -1,0 +1,140 @@
+.base-tela-inicial {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgba(41, 41, 41, 0.2);
+}
+
+.navbar img{
+    width: 35%;
+    height: 70%;
+}
+
+.navbar span {
+    font-family: 'Roboto';
+    color: white !important;
+    font-size: 1.7em;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 0;
+}
+
+/**/
+
+.area-cards {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+/**/
+.card-nota {
+    width: 25rem;
+    background-color: #FCF191;
+    box-shadow: 0 2px 4px 0 rgba(41, 41, 41, 0.2);  
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-nota svg:hover{
+    cursor: pointer;
+}
+
+.card-nota-titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+
+
+.span-textarea-cardnota, .span-textarea-cardnota-titulo {
+    border: 0;
+    background-color: #FCF191;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.span-textarea-cardnota, .span-textarea-cardnota-titulo:hover {
+    cursor: text;
+}
+
+
+.span-textarea-cardnota[contenteditable]:empty::before {
+    content: "Insira uma anotação";
+    color: gray;
+}
+
+.span-textarea-cardnota-titulo[contenteditable]:empty::before {
+    content: "Título";
+    color: gray;
+}
+
+
+.rodape-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.rodape-card svg{
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+/**/
+
+.add-card{
+    position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.add-card svg{
+    margin-top: 0.3em;
+}
+
+.add-card:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .add-card{
+        right:20px;
+    }
+}
