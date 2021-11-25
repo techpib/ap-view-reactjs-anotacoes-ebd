@@ -1,0 +1,77 @@
+/**/
+.card-nota {
+    width: 25rem;
+    min-width: 200px;
+    background-color: #FCF191;
+    box-shadow: 0 2px 4px 0 rgba(41, 41, 41, 0.2);  
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
+
+.card-nota svg:hover{
+    cursor: pointer;
+}
+
+.card-nota-titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+}
+
+
+
+.span-textarea-cardnota, .span-textarea-cardnota-titulo {
+    border: 0;
+    background-color: #FCF191;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.span-textarea-cardnota, .span-textarea-cardnota-titulo:hover {
+    cursor: text;
+}
+
+
+.span-textarea-cardnota[contenteditable]:empty::before {
+    content: "Insira uma anotação";
+    color: gray;
+}
+
+.span-textarea-cardnota-titulo[contenteditable]:empty::before {
+    content: "Título";
+    color: gray;
+}
+
+
+.rodape-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+
+.rodape-card svg{
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 1300px) {
+    .card-nota {
+        flex: 1 1 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-nota {
+        flex: 1 1 50%;
+    }
+}
