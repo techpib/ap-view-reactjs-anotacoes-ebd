@@ -33,10 +33,12 @@
     resize: none;
     min-height: 40px;
     line-height: 20px;
+    white-space: pre-line;
 }
 
 .span-textarea-cardnota, .span-textarea-cardnota-titulo:hover {
     cursor: text;
+    white-space: pre-line;
 }
 
 
